@@ -7,7 +7,7 @@ const server = express();
 server.use(express.json());
 
 server.get('/', (req, res) => {
-  res.send('<h1>Hello World</h1>');
+  res.status(200).send('<h1>The server is working</h1>');
 });
 
 server.use('/api/posts', postsRouter);
